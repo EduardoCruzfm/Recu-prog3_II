@@ -1,0 +1,370 @@
+{
+    "info": {
+        "name": "2024_1C_PP",
+        "_postman_id": "91774bab-5dcd-4d9e-a8f5-4b027749f3d0",
+        "description": "",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "01-altaNeumaticoJSON",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "marca",
+                            "value": "BridgeStone7",
+                            "type": "text"
+                        },
+                        {
+                            "key": "medidas",
+                            "value": "195-55-R16",
+                            "type": "text"
+                        },
+                        {
+                            "key": "precio",
+                            "value": "25900",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost/prog_3/altaNeumaticoJSON.php",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "path": [
+                        "prog_3",
+                        "altaNeumaticoJSON.php"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "02-listadoNeumaticosJSON",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost/prog_3/listadoNeumaticosJSON.php",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "path": [
+                        "prog_3",
+                        "listadoNeumaticosJSON.php"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "03-agregarNeumaticoSinFoto",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "neumatico_json",
+                            "value": "{\"marca\":\"BridgeStone1\", \"medidas\":\"195-55-R16\", \"precio\":33000}",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost/prog_3/agregarNeumaticoSinFoto.php",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "path": [
+                        "prog_3",
+                        "agregarNeumaticoSinFoto.php"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "04-listadoNeumaticosBD",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "tabla",
+                            "value": "mostrar",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost/prog_3/listadoNeumaticoBD.php",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "path": [
+                        "prog_3",
+                        "listadoNeumaticoBD.php"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "05-eliminarNeumaticoBD",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "neumatico_json",
+                            "value": "{\"id\":\"1\",\"marca\":\"BridgeStone\",\"medidas\":\"195-55-R16\", \"precio\":33500}",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost/prog_3/eliminarNeumaticoBD.php",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "path": [
+                        "prog_3",
+                        "eliminarNeumaticoBD.php"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "06-modificarNeumaticoBD",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "neumatico_json",
+                            "value": "{\"id\":1,\"marca\":\"pirelli_modif\", \"medidas\":\"desconocidas_modif\", \"precio\": 1}",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost/prog_3/modificarNeumaticoBD.php",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "path": [
+                        "prog_3",
+                        "modificarNeumaticoBD.php"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "07-verificarNeumaticoBD",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "obj_neumatico",
+                            "value": "{\"marca\":\"Pirelli\", \"medidas\":\"190-30-R18\"}",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost/prog_3/verificarNeumaticoBD.php",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "path": [
+                        "prog_3",
+                        "verificarNeumaticoBD.php"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "08-agregarNeumaticoBD",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "marca",
+                            "value": "FateO",
+                            "type": "text"
+                        },
+                        {
+                            "key": "medidas",
+                            "value": "195-55-R18",
+                            "type": "text"
+                        },
+                        {
+                            "key": "precio",
+                            "value": "59666",
+                            "type": "text"
+                        },
+                        {
+                            "key": "foto",
+                            "value": "c:\\Users\\Maxi\\Pictures\\backend_frontend.jpeg",
+                            "type": "file"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost/prog_3/agregarNeumaticoBD.php",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "path": [
+                        "prog_3",
+                        "agregarNeumaticoBD.php"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "09-eliminarNeumaticoBD__POST",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "neumatico_json",
+                            "value": "{\"id\":\"2\",\"marca\":\"FateO\",\"medidas\":\"195-55-R18\",\"precio\":\"500999\",\"pathFoto\":\".\\/bridgestone.233148.jpg\"}",
+                            "type": "text"
+                        },
+                        {
+                            "key": "accion",
+                            "value": "borrar",
+                            "type": "text",
+                            "disabled": true
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost/prog_3/eliminarNeumaticoBDFoto.php",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "path": [
+                        "prog_3",
+                        "eliminarNeumaticoBDFoto.php"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "10-eliminarNeumaticoBD__GET",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost/prog_3/eliminarNeumaticoBDFoto.php",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "path": [
+                        "prog_3",
+                        "eliminarNeumaticoBDFoto.php"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "11-modificarNeumaticoBDFoto",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "neumatico_json",
+                            "value": "{\"id\":2,\"marca\":\"pirelli_modif\", \"medidas\":\"desconocidas_modif\", \"precio\": 1}",
+                            "type": "text"
+                        },
+                        {
+                            "key": "foto",
+                            "value": "c:\\Users\\Maxi\\Pictures\\FUHffM-X0AEv-DH.jpg",
+                            "type": "file"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost/prog_3/modificarNeumaticoDBFoto.php",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "path": [
+                        "prog_3",
+                        "modificarNeumaticoDBFoto.php"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "12-mostrarBorradosJSON.php",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost/prog_3/mostrarBorradosJSON.php",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "path": [
+                        "prog_3",
+                        "mostrarBorradosJSON.php"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "13-mostrarFotosDeModificados",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost/prog_3/mostrarFotosDeModificados.php",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "path": [
+                        "prog_3",
+                        "mostrarFotosDeModificados.php"
+                    ]
+                }
+            }
+        }
+    ]
+}
